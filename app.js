@@ -219,66 +219,69 @@ function receivedMessage(event) {
     return;
   }
 
-  if (messageText) {
+  sendTextMessage(senderId, 'Hi! Send us an image.');
+  sendButtonMessage('1096260513')
 
-    // If we receive a text message, check to see if it matches any special
-    // keywords and send back the corresponding example. Otherwise, just echo
-    // the text we received.
-    switch (messageText) {
-      case 'image':
-        sendImageMessage(senderID);
-        break;
+  // if (messageText) {
 
-      case 'gif':
-        sendGifMessage(senderID);
-        break;
+  //   // If we receive a text message, check to see if it matches any special
+  //   // keywords and send back the corresponding example. Otherwise, just echo
+  //   // the text we received.
+  //   switch (messageText) {
+  //     case 'image':
+  //       sendImageMessage(senderID);
+  //       break;
 
-      case 'audio':
-        sendAudioMessage(senderID);
-        break;
+  //     case 'gif':
+  //       sendGifMessage(senderID);
+  //       break;
 
-      case 'video':
-        sendVideoMessage(senderID);
-        break;
+  //     case 'audio':
+  //       sendAudioMessage(senderID);
+  //       break;
 
-      case 'file':
-        sendFileMessage(senderID);
-        break;
+  //     case 'video':
+  //       sendVideoMessage(senderID);
+  //       break;
 
-      case 'button':
-        sendButtonMessage(senderID);
-        break;
+  //     case 'file':
+  //       sendFileMessage(senderID);
+  //       break;
 
-      case 'generic':
-        sendGenericMessage(senderID);
-        break;
+  //     case 'button':
+  //       sendButtonMessage(senderID);
+  //       break;
 
-      case 'receipt':
-        sendReceiptMessage(senderID);
-        break;
+  //     case 'generic':
+  //       sendGenericMessage(senderID);
+  //       break;
 
-      case 'quick reply':
-        sendQuickReply(senderID);
-        break        
+  //     case 'receipt':
+  //       sendReceiptMessage(senderID);
+  //       break;
 
-      case 'read receipt':
-        sendReadReceipt(senderID);
-        break        
+  //     case 'quick reply':
+  //       sendQuickReply(senderID);
+  //       break        
 
-      case 'typing on':
-        sendTypingOn(senderID);
-        break        
+  //     case 'read receipt':
+  //       sendReadReceipt(senderID);
+  //       break        
 
-      case 'typing off':
-        sendTypingOff(senderID);
-        break        
+  //     case 'typing on':
+  //       sendTypingOn(senderID);
+  //       break        
 
-      default:
-        sendTextMessage(senderID, messageText);
-    }
-  } else if (messageAttachments) {
-    sendTextMessage(senderID, "Message with attachment received");
-  }
+  //     case 'typing off':
+  //       sendTypingOff(senderID);
+  //       break        
+
+  //     default:
+  //       sendTextMessage(senderID, messageText);
+  //   }
+  // } else if (messageAttachments) {
+  //   sendTextMessage(senderID, "Message with attachment received");
+  // }
 }
 
 
