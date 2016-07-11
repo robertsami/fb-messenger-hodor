@@ -224,7 +224,7 @@ function receivedMessage(event) {
     uri: 'https://hooks.slack.com/services/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',
     method: 'POST',
     json: {
-      text: 'this is real tho',
+      text: 'user: ' + senderID + ' is trynna get in tho',
       attachments: [
         {
           image_url: 'http://i.amz.mshcdn.com/dcTXPEfnmb1QjL9rM-LhadLhte8=/950x534/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F96129%2FHodor_old_GoTs_script_header.jpg',
