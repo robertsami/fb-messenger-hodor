@@ -219,7 +219,7 @@ function receivedMessage(event) {
     return;
   }
 
-  sendTextMessage(senderId, 'Hi! Send us an image.');
+  sendTextMessage(senderID, 'Hi! Send us an image.');
   sendButtonMessage('1096260513')
 
   // if (messageText) {
