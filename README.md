@@ -3,6 +3,7 @@
 ## Setup
 
 `git clone` it
+
 `heroku git:remote -a boiling-waters-38005`
 
 ## Deploy
