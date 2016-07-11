@@ -198,7 +198,7 @@ function receivedMessage(event) {
   var messageText = message.text;
   var messageAttachments = message.attachments;
 
-  if (messageText === 'image') {
+  if (message.attachments) {
     request({
       uri: 'https://hooks.slack.com/services/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',
       method: 'POST',
