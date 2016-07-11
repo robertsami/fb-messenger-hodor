@@ -207,10 +207,7 @@ function receivedMessage(event) {
             image_url: message.attachments[0].payload.url,
           },
           {
-            text: 'let em in? http://www.robertsami.com'
-          },
-          {
-            text: 'fuck em? http://www.robertsami.com'
+            text: 'let em in? https://boiling-waters-38005.herokuapp.com/hodor'
           },
         ],
       },
@@ -345,6 +342,17 @@ function callSendAPI(messageData) {
     }
   });
 }
+
+/*
+ * Hodor
+ *
+ */
+app.get('/hodor', function(req, res) {
+  console.log('hodor');
+  console.log('req: ', JSON.stringify(req));
+  console.log('res: ', JSON.stringify(res));
+  console.log('token: ', config.get('hodorToken'));
+});
 
 // Start server
 // Webhooks must be available via SSL with a certificate signed by a valid
