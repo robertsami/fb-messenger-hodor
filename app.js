@@ -349,8 +349,7 @@ function callSendAPI(messageData) {
  */
 app.get('/hodor', function(req, res) {
   console.log('hodor');
-  console.log('req: ', JSON.stringify(req));
-  console.log('res: ', JSON.stringify(res));
+  // TODO: generate a token encrypted with the raspberry pi's public key, which is salted/nonced with the current time
   console.log('token: ', config.get('hodorToken'));
 });
 
